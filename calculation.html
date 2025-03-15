@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculation in HTML</title>
+  </head>
+  <body>
+    <h1>Javascript Variables and Calculations</h1>
+
+    <h3>Sum of two Numbers</h3>
+    <p id="sum"></p>
+
+    <h3>Sub of two Numbers</h3>
+    <p id="sub"></p>
+    
+    <h3>Product of two Numbers</h3>
+    <p id="mult"></p>
+
+    <h3>Quotient of two Numbers</h3>
+    <p id="div"></p>
+
+    <script>
+      var sum,sub,mult,div;
+
+      const x = 10;
+      const y = 40;
+
+      sum = x + y;
+      sub = x - y;
+      mult = x * y;
+      div = x / y;
+
+      document.getElementById("sum").innerHTML = `The sum of ${x} + ${y} = ${sum}`;
+      document.getElementById("sub").innerHTML = `The sub of ${x} - ${y} = ${sub}`;
+      document.getElementById("mult").innerHTML = `The product of ${x} * ${y} = ${mult}`;
+      document.getElementById("div").innerHTML = `The div of ${x} / ${y} = ${div}`;
+    </script>
+  </body>
+</html>
